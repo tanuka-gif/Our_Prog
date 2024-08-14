@@ -7,7 +7,7 @@ const userController = {
       if (err) {
         return res.status(500).json({ error: err.message });
       }
-      res.render("users", { users });
+      res.sendFile("user2", { users });
     });
   },
 
@@ -19,7 +19,7 @@ const userController = {
       }
       res
         .status(201)
-        .redirect("/users");
+        .redirect("/user2");
     });
   },
   deleteUser: (req, res) => {
@@ -28,7 +28,7 @@ const userController = {
       if (err) {
         return res.status(500).json({ error: err.message });
       }
-      res.redirect('/users');
+      res.redirect('/user2');
     });
   },
 
@@ -39,7 +39,7 @@ const userController = {
       if (err) {
         return res.status(500).json({ error: err.message });
       }
-      res.redirect('/users');
+      res.redirect('/user2');
     });
   },
 };
