@@ -25,7 +25,7 @@
            
 
         // We are going to insert the data into our sampleDB table
-        $sql = "INSERT INTO info VALUES ('$name',
+        $sql = "INSERT INTO info1 VALUES ('$name',
             '$email','$number','$message')";
 
         // Check if the query is successful
