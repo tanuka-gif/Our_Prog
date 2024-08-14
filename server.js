@@ -21,5 +21,5 @@ app.use("/", userRoutes);
 
 const PORT = 8080;
 app.listen(PORT, () => {
-  console.log(`http://localhost:${PORT}/users`);
+  console.log(`http://localhost:${PORT}/user2`);
 });
